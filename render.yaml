@@ -2,7 +2,7 @@ services:
   # Backend Service
   - type: web
     name: sweet-shop-backend
-    env: node
+    runtime: node
     plan: free
     buildCommand: npm install && npm run build
     startCommand: npx prisma db push && npx ts-node prisma/seed.ts && node dist/server.js
@@ -15,7 +15,6 @@ services:
   # Frontend Service
   - type: static
     name: sweet-shop-frontend
-    env: static
     plan: free
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: ./client/dist
