@@ -1,5 +1,5 @@
 services:
-  # Backend Service
+  # Backend
   - type: web
     name: sweet-shop-backend
     runtime: node
@@ -12,10 +12,13 @@ services:
       - key: JWT_SECRET
         generateValue: true
 
-staticSites:
-  - name: sweet-shop-frontend
+  # Frontend (Served as Node App to avoid Static Site errors)
+  - type: web
+    name: sweet-shop-frontend
+    runtime: node
+    plan: free
     buildCommand: cd client && npm install && npm run build
-    publishPath: ./client/dist
+    startCommand: cd client && npx serve -s dist -l 10000
     envVars:
       - key: VITE_API_BASE_URL
         fromService:
