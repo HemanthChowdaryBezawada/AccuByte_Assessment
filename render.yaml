@@ -12,10 +12,8 @@ services:
       - key: JWT_SECRET
         generateValue: true
 
-  # Frontend Service
-  - type: static
-    name: sweet-shop-frontend
-    plan: free
+staticSites:
+  - name: sweet-shop-frontend
     buildCommand: cd client && npm install && npm run build
     publishPath: ./client/dist
     envVars:
