@@ -18,5 +18,11 @@
       "node",
       "jest"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "client"
+  ]
 }
