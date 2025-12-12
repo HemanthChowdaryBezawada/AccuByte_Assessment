@@ -82,7 +82,7 @@ A full-stack application for managing a sweet shop's inventory, sales, and user 
 I leveraged AI assistance to enhance my development workflow, while maintaining full control over the system design and core logic.
 
 - **Architecture & Design**: I designed the full-stack architecture independently. AI provided specific tool recommendations (like Prisma and Vite) to fit my requirements.
-- **Implementation**: I developed the core API logic myself. AI assisted by generating boilerplate code, speeding up the implementation of standard components, and helping write the majority of the code under my direction.
+- **Implementation**: I developed the core API logic myself. AI assisted by generating boilerplate code, speeding up the implementation of standard components, and helping write the code under my direction.
 - **Testing**: I used AI to generate comprehensive unit tests to verify the APIs I built.
 - **Refactoring & Debugging**: AI was helpful for refactoring code for performance and resolving configuration and debugging issues.
 
