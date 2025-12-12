@@ -50,6 +50,17 @@ A full-stack application for managing a sweet shop's inventory, sales, and user 
     - App runs on: `http://localhost:5173`
     - Open this URL in your browser to use the app.
 
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Admin Panel
+![Admin Panel](screenshots/admin.png)
+
 ## Features
 - **User Authentication**: Register and Login (JWT-based).
 - **Dashboard**: View sweets, search by name, sort by price, and purchase items.

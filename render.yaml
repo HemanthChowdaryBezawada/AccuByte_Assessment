@@ -1,0 +1,27 @@
+services:
+  # Backend Service
+  - type: web
+    name: sweet-shop-backend
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npx prisma db push && npx ts-node prisma/seed.ts && node dist/server.js
+    envVars:
+      - key: DATABASE_URL
+        value: file:./dev.db
+      - key: JWT_SECRET
+        generateValue: true
+
+  # Frontend Service
+  - type: static
+    name: sweet-shop-frontend
+    env: static
+    plan: free
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: ./client/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: sweet-shop-backend
+          property: url
