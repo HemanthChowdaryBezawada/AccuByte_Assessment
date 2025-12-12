@@ -17,7 +17,7 @@ services:
     name: sweet-shop-frontend
     plan: free
     buildCommand: cd client && npm install && npm run build
-    staticPublishPath: ./client/dist
+    publishPath: ./client/dist
     envVars:
       - key: VITE_API_BASE_URL
         fromService:
