@@ -86,5 +86,19 @@ I leveraged AI assistance to enhance my development workflow, while maintaining 
 - **Testing**: I used AI to generate comprehensive unit tests to verify the APIs I built.
 - **Refactoring & Debugging**: AI was helpful for refactoring code for performance and resolving configuration and debugging issues.
 
+## 🧪 Test Report
+A comprehensive test suite was developed using **Jest**.
+- **Total Tests**: 17 Passed
+- **Coverage**: Core Domain Logic, Services, and Utilities.
+- [View Detailed Test Report](./TEST_REPORT.md)
+
+## 🚀 Live Deployment
+The application is successfully deployed on **Render.com**.
+
+- **Live Application**: [https://sweet-shop-frontend-b4pe.onrender.com](https://sweet-shop-frontend-b4pe.onrender.com)
+- **Backend API**: [https://sweet-shop-backend.onrender.com/api](https://sweet-shop-backend.onrender.com/api)
+
+> *Note: If the application sleeps due to inactivity (Free Tier), please allow 30-60 seconds for the first request to wake it up.*
+
 ## License
-MIT
+Bezawada Hemanth Chowdary
