@@ -26,5 +26,8 @@
     "dist",
     "coverage",
     "client"
+  ],
+  "include": [
+    "src/**/*"
   ]
 }
